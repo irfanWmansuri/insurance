@@ -1,0 +1,97 @@
+/*** GLOBAL SETTING ***/
+body {margin:0; padding:0;font:normal 18px 'Montserrat', sans-serif; color:#b3b3b3; line-height:normal;}
+
+:root{
+    --black: #212121;
+    --navyblue : #022658;
+    --yellow : #faa343;
+    --blue : #1f3e9b;
+    --white : #fff;
+}
+
+/*** GLOBAL SELECTORS ***/
+a{text-decoration: none; transition: all 0.3s linear;display: block;}
+.container{max-width: min(1290px, 96%); margin: 0 auto;}
+.reset{margin: 0; padding: 0; list-style: none;}
+img{max-width: 100%; height: auto;}
+/*Main Content*/
+
+#cursor{width: 15px;height: 15px;border-radius: 50%;background-color: var(--yellow);position: absolute;z-index: 999;transition:all .2s ;filter: blur(5px);}
+.headersec{padding: 15px 0;}
+.headersec .container{display: flex; justify-content: space-between; align-items: center;}
+.headersec .headerright,.headersec .headerright ul{display: flex; align-items: center; gap: 50px;}
+.headersec .headerright ul li a{color: var(--black); display: inline-block; font-size: 16px; line-height: normal; font-weight: 600;}
+.headersec .headerright ul li a:hover {opacity: .5;}
+.headersec .callbtn a{display: inline-block; color: var(--white); padding: 11px 22px; border-radius: 6px; background: var(--navyblue); letter-spacing: 1.2px; font-weight: 600;}
+.headersec .callbtn a:hover{background: var(--yellow); color: var(--black);}
+
+.bannersec{background: var(--navyblue); padding: 90px 0;}
+.bannersec .container{display: grid; grid-template-columns: repeat(2,1fr); gap: 80px; align-items: center;}
+.bannercaption h2{font-size: 40px; color: #fff; text-transform: capitalize; font-weight: 600; line-height: 60px;}
+.bannercaption h2 span{color: var(--yellow);}
+.bannerimg{text-align: end;}
+
+.servicesec{padding: 100px 0;text-align: center;}
+.servicewrap{display: grid;gap: 50px; grid-template-columns:repeat(3,1fr);}
+.servicebox { text-align: center; box-shadow: 0px 5px 10px 0 rgba(0,0,0,0.2);padding-bottom: 30px;border-radius: 5px;padding: 30px 40px;  line-height: 1.5;transition: all 0.3s linear}
+.servicebox:hover{box-shadow:  0px 2px 10px 0 #022658;}
+.servicesec .container h2{text-align: center;font-size:40px ;margin-bottom: 50px;color: var(--black);font-weight: 600;}
+.servicebox h3{color: var(--black);}
+.servicebox a{display: inline-block; font-size: 18px;color: var(--yellow);margin-top: 20px;font-weight: 500;}
+.servicesec p{ margin-bottom: 24px;font-size: 16px;}
+.viewbtn a{padding: 12px 30px;border: 1px solid var(--yellow);border-radius: 5px; color: var(--yellow);font-weight: 600;display: inline-block; margin-top: 50px;}
+.servicebox a:hover{color: var(--blue);}
+.viewbtn a:hover{color: var(--white);background-color: var(--yellow);}
+
+.testimonialsec{width: 100%;padding: 50px 0;text-align: center;background-color: #90A5FE;color: #000;}
+.testimonialsec h1{display: block;color: var(--black);}
+.testimonialsec .item p { width: 70%; margin: 0 auto; line-height: 2; font-size: 20px;text-indent: 20px;}
+.testimonialsec .item .slidebar h3:before{content: ''; position: absolute; top: 0; left: 50%; transform: translate(-50%, 0); width: 80px; height: 5px; background: var(--yellow);}
+.item .slidebar h3{color: var(--black);margin-bottom: 10px;padding-top: 22px; font-weight: 700;position: relative;}
+/* .socialsec ul li a { display: block; background: url(/images/socialicon.png) no-repeat top center; background-position: 0 0; width: 24px; height: 22px; transition: inherit; }
+.socialsec ul li a.fb { width: 12px; background-position: 0 0; }
+.socialsec ul li a.twt {background-position: -59px 0;}
+.socialsec ul li a.linkedin {width: 22px; background-position: -122px 0;}
+.socialsec ul li a.insta { width: 22px; background-position: -178px 0;}  */
+
+.copyrightsec{padding: 30px 0; text-align: center; background: #052689;}
+.copyrightsec p { font-size: 16px; color: var(--white); font-weight: 400; line-height: 28px; display: block; }
+.copyrightsec p a {display: inline-block; color: var(--yellow);}
+.copyrightsec p a:hover{color: var(--white);}
+
+.aboutsec{text-align: center;background-color: #dfdfdf;}
+.aboutcontent{padding: 50px 0;}
+.aboutcontent h3{font-size: 35px;margin: 0;color: var(--black);text-transform: capitalize;}
+.aboutcontent p{width: 40%;display: inline-block;line-height: 1.5;color: var(--black);font-size: 16px;}
+.aboutcontent a{display:inline-block;color: var(--white); padding: 12px 30px; background-color: var(--yellow); border-radius: 5px;font-weight: 500; }
+.aboutcontent a:hover{background-color: var(--white);color: var(--yellow);border: 1px solid var(--yellow) ;}
+
+
+.footersec{padding: 55px 0; background: var(--navyblue);}
+.footersec h1{color: var(--white);}
+.footersec h3 { font-size: 21px; color: #fff; font-weight: 700; line-height: 28px; margin-bottom: 30px; }
+.footersec .footerwrap{display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 30px;}
+.footersec .mapsec{border-radius: 12px; overflow: hidden;}
+.footerwrap .addressbox h4, .footerwrap .footermenu h4 { font-size: 28px; color: var(--white); font-weight: 600; line-height: 33px; margin-bottom: 25px; margin-top: 0;}
+.footerwrap .addressbox p { font-size: 18px; color: var(--white); font-weight: 600; line-height: 30px; margin: 25px 0; }
+.footerwrap .addressbox p.addresstext { font-size: 18px; color: var(--white); font-weight: 400; line-height: 33px; }
+.footerwrap .addressbox p.phone {position: relative; padding-left: 80px;}
+.footerwrap .addressbox p.phone span { position: absolute; top: 0; left: 0; }
+.addressbox p a { display: inline-block; color: var(--white); }
+.addressbox p a:hover, .footermenu ul li a:hover{color: var(--yellow);}
+.footerwrap .addressbox, .footerwrap .footermenu {padding-top: 10px;}
+.footerwrap .footermenu { padding-left: 80px; }
+.footermenu ul{display: flex; flex-direction: column; gap: 20px;}
+.footermenu ul li{position: relative;}
+.footermenu ul li:before { content: ''; position: absolute; top: calc(50% - 2px); left: 0; width: 18px; height: 3px; background: #0852cf; }
+.footermenu ul li a, .contactfooter ul li a { display: inline-block; font-size: 18px; color: var(--white); font-weight: 400; line-height: 20px; margin-left: 36px; }
+.socialicon {display: flex;align-items: center;gap: 20px; }
+.socialicon ul{padding: 8px 8px 8px 11px;display: flex;gap: 6px;border-radius: 50px;background: #fff;}
+.socialicon ul li a{color: #faa343;font-size: 25px;}
+.socialicon ul li a:hover{opacity: .7;}
+
+.socialicon .twt i{color: #1DA1F2;}
+.socialicon .fb i{color: #4867AA;}
+.socialicon .linkedin i{color: #4867AA;}
+.socialicon .insta i{color: #F402BE;}
+
