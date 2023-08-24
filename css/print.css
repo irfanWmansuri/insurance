@@ -121,6 +121,7 @@ span.break{display: block; color: var(--white) !important;}
 .aboutsec .aboutbtn a:hover{background: var(--yellow);}
 
 .partnersec{text-align: center;}
+.partnersec .container{width: 960px;}
  .partnerslider .owl-item img {width: 178px;height: 78px;}
 .slidetrack { width: 100%; padding: 20px; display: flex; gap: 26px;justify-content: center;align-items: center; }
 .ourpartner{box-shadow: 0 0 15px #b9b9b9; padding: 20px; border-radius: 20px;}
